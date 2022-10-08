@@ -4,12 +4,8 @@ import Board from "./Board";
 import "./css/GameStyles.css";
 
 const Game = () => {
-  // 3x3
-  // const [board, setBoard] = useState(Array(9).fill(null));
-  // // 5x5
-  // const [board, setBoard] = useState(Array(25).fill(null));
-  // // 7x7
-  const [board, setBoard] = useState(Array(49).fill(null));
+  // 15x15
+  const [board, setBoard] = useState(Array(225).fill(null));
   const [xIsNext, setXIsNext] = useState(true);
 
   const winner = calculateWinner(board);
@@ -21,12 +17,8 @@ const Game = () => {
     setXIsNext(!xIsNext);
   };
   const handleResetGame = () => {
-    // 3x3
-    // setBoard(Array(9).fill(null));
-    // // 5x5
-    // setBoard(Array(25).fill(null));
-    // // 7x7
-    setBoard(Array(49).fill(null));
+    // 15x15
+    setBoard(Array(225).fill(null));
     setXIsNext(true);
   };
   return (

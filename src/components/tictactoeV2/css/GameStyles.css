@@ -6,10 +6,15 @@
   /* 7x7 */
   width: 1500px;
   height: 1000px;
+  /* 15x15 */
+  width: 1500px;
+  height: 900px;
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(7, 1fr);
+  grid-template-columns: repeat(15, 1fr);
+  grid-template-rows: repeat(15, 1fr);
   grid-gap: 25px;
+  /* 15x15 */
+  grid-gap: 10px;
 }
 .game-cell {
   cursor: pointer;
@@ -20,6 +25,8 @@
   font-size: 100px;
   /* 7x7 */
   font-size: 80px;
+  /* 15x15 */
+  font-size: 30px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .game-cell.is-x {
